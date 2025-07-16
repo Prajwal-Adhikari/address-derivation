@@ -1,0 +1,18 @@
+[package]
+name = "address_derivation"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bip32 = "0.5.3"
+bip39 = { version = "2.2.0", features = ["rand"] }
+alloy-signer = "1.0.22"
+# alloy-signer-wallet = "0.0.0-reserved"
+alloy-signer-local = "1.0.22"
+solana-sdk = "2.3.1"
+tiny-hderive = "0.3.0" # Excellent for low-level BIP32 derivation
+sha2 = "0.10.9"
+# Utilities
+anyhow = "1.0"
+dotenv = "0.15"
+hex = "0.4"
